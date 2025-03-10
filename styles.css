@@ -3,7 +3,7 @@
 body{
     margin: 0px;
 }
-img#post_logo {
+#post_logo {
     width: 200px;
     display: block;
 }
@@ -27,13 +27,13 @@ body{
     padding: 0px;
 }
 
-div#hero_image{
+#hero_image{
     background-image: url(images/ocean.jpg);
     background-size: cover;
     background-position: center;
     height: 850px;
 }
-div#hero_image h1{
+#hero_image h1{
     color: #ffffff;
     font-size: 100px;
     font-family: "Montserrat", sans-serif;
@@ -43,17 +43,18 @@ div#hero_image h1{
     margin: 0px;
 }
 
-div#header_option{
+#header_option{
     padding: 20px;
     background-color: #40afde;
 }
 
-div#header_option:hover{
+#header_option:hover{
     background-color: #4da2c6;
 }
 
-div#content{
-    animation: scrollAnim 1s linear infinite;
+#content{
+    position: absolute;
+    animation: scrollAnim 1s linear forwards;
     animation-play-state: paused;
     animation-delay: calc(var(--scroll) * -1s);
     padding: 20px;
@@ -62,8 +63,12 @@ div#content{
     font-weight: 500;
     margin: auto;
 }
-div#content p{
+#content p{
     margin-left: 10px;
+}
+
+#content_box {
+    margin: 30px;
 }
 
 a{
@@ -81,6 +86,8 @@ footer{
     padding: 10px;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
+    padding-top: 20px;
+    padding-bottom: 20px;
     margin: auto;
 }
 p{
